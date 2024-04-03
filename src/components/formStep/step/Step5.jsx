@@ -2,7 +2,7 @@ import logoImg from "./../images/logo.png"
 export  const Step5 = ({ onNext }) => {
     return (
       <>
-        <div>
+      
           <div className="main-container  flex justify-center items-center flex-col">
             <div className=" w-[80%]  flex justify-center gap-5 items-center max-md:flex-col max-sm:w-[90%] ">
               <div className=" image">
@@ -75,7 +75,7 @@ export  const Step5 = ({ onNext }) => {
               </button>
             </div>
           </div>
-        </div>
+        
       </>
     );
   };

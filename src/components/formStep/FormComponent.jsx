@@ -12,13 +12,11 @@ const FormComponent = () => {
   const [loading, setLoading] = useState(false);
   const handleNextStep = () => {
     nextProgress();
-    // setStep(step+1)
-    // setVisible(false)
     console.log(count);
   };
 
   return (
-    <div className="container">
+    <div className="container flex justify-center w-screen items-center flex-col">
       {count === 10 && step === 1 && <Step1  />}
       {count === 30 && step === 2 && <Step2  />}
       {count === 50 && step === 3 && <Step3 onNext={handleNextStep} />}
