@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/header/Header";
 import { BrowserRouter } from "react-router-dom";
-import FormComponent from "./components/formComponent/FormComponent";
+import FormComponent from "./components/formStep/FormComponent";
 import { ProgressContextProvider } from "./context/useProgress";
 import leftArrow from "./svg/left.png"
 
@@ -43,7 +43,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
-       {isVisible?( <div className=" progress-bar w-screen h-5  mt-[13vh] p-5 flex justify-center items-center">
+       {isVisible?( <div className=" progress-bar w-screen h-5  mt-[13vh] max-sm:mt-[11vh] p-5 flex justify-center items-center">
           <div className="back-btn flex justify-center items-center">
             {count !== 10 ? (
               <button

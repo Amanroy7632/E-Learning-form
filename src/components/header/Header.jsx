@@ -35,7 +35,7 @@ function Header() {
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-indigo-700 lg:p-0 dark:hover:text-indigo-700  `
                     }> Home</NavLink></li>
             <li>
-              <NavLink to={"courses"} smooth
+              <NavLink to={"courses"} 
               className={({ isActive }) =>
               `block py-2 pr-4 pl-3 duration-200 ${
                 isActive
@@ -77,7 +77,7 @@ function Header() {
                       } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-indigo-700 lg:p-0 dark:hover:text-indigo-700  `
                     } onClick={hideNavigationHandler}> Home</NavLink></li>
             <li>
-              <NavLink to={"courses"} smooth
+              <NavLink to={"courses"} 
               className={({ isActive }) =>
               `block py-2 pr-4 pl-3 duration-200 ${
                 isActive
